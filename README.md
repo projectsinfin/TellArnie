@@ -1,2 +1,0 @@
-# tellarnie
-tellarnie
