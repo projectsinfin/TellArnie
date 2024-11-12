@@ -1,0 +1,371 @@
+<WebView
+ref={webViewRef}
+source={{
+  html: `
+  <html><head> <head>
+  <style>
+  .top-container {
+    display: flex;
+    justify-content: space-between; /* Align children with space between */
+    gap: 1px; /* Gap between children */
+  }
+    .container {
+      background-color: ${Colors.greenTint};
+      // padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+    height:55px
+    }
+    .heading {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: -0.011em;
+      text-align: center;
+      color: ${Colors.white};
+    }
+    .text {
+      color: ${Colors.white};
+      font-family: 'Open Sans', sans-serif;
+      margin-top: -5px;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: -0.011em;
+      text-align: center;
+     
+    }
+  </style>
+</head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+  <body style="margin-left: 20px; margin-right: 20px;"> 
+    <h3 style="text-align: center; font-family:OpenSans-Regular;">
+      ${AllStrings.SummaryIncidentReport}
+    </h3>
+    <h5 style="font-family:OpenSans-Regular;">
+      ${AllStrings.IncidentReportmadeby}
+    </h5>
+    <div style="margin-bottom: -10px;background-color: #c5c5c5;border-width: 0.5px;border-style: solid; margin-top: -8px;"></div>
+    <div>
+      <div style="display: flex; flex-direction: row;margin-bottom: -25px;">
+        <p style="font-size: 14px; line-height: 21px; font-weight: bold;">Name:&nbsp;</p>
+        <p style="font-size: 14px; line-height: 21px;">
+          <!-- Insert dynamic content here -->
+          ${profileDetails?.data.user_details.first_name} ${
+    profileDetails?.data.user_details.last_name
+  }
+        </p>
+      </div>
+
+
+ 
+
+      ${
+        // Conditionally render the contact number based on its length
+        profileDetails?.data.user_details.contact_number?.length > 6
+          ? `
+            <div style="display: flex; flex-direction: row;margin-bottom: -25px;">
+              <p style="font-size: 14px; line-height: 21px; font-weight: bold;">Contact Number:&nbsp;</p>
+              <p style="font-size: 14px; line-height: 21px;">${profileDetails?.data.user_details.country_code} ${profileDetails?.data.user_details.contact_number}</p>
+            </div>
+          `
+          : `
+            
+          `
+      }
+
+
+
+      <div style="display: flex; flex-direction: row;">
+        <p style="font-size: 14px; line-height: 21px; font-weight: bold;">Email:&nbsp;</p>
+        <p style="font-size: 14px; line-height: 21px;">
+          <!-- Insert dynamic content here -->
+          ${profileDetails?.data.user_details.email}
+        </p>
+      </div>
+  </div>
+
+    <h5 style="font-family:OpenSans-Regular;">
+      ${AllStrings.TypeIncident}
+    </h5>
+    <div style="margin-bottom: -10px;background-color: #c5c5c5;border-width: 0.5px;border-style: solid; margin-top: -8px;"></div>
+
+    <div style="display: flex; flex-direction: row; margin-bottom: 10px;margin-bottom: -25px;">
+      <p style="font-size: 14px; line-height: 21px; font-weight: bold;">Category:&nbsp </p>
+      <p style="font-size: 14px; line-height: 21px;">
+        <!-- Insert dynamic content here -->
+        ${
+          kitAllDetails?.incident?.category_of_incident ||
+          data?.categoryIncident
+        }
+      </p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-bottom: 10px;margin-bottom: -25px;">
+      <p style="font-size: 14px; line-height: 21px; font-weight: bold;">Classification:&nbsp </p>
+      <p style="font-size: 14px; line-height: 21px; width: 80%;">
+        <!-- Insert dynamic content here -->
+        ${
+          data?.classification ||
+          kitAllDetails?.incident?.classification
+        }
+      </p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-bottom: 10px;margin-bottom: -25px;">
+      <p style="font-size: 14px; line-height: 21px; font-weight: bold;">Date:&nbsp</p>
+      <p style="font-size: 14px; line-height: 21px;">
+        <!-- Insert dynamic content here -->
+        ${
+          kitAllDetails?.incident?.incident_date
+            ? moment(kitAllDetails?.incident?.incident_date).format(
+                "DD MMM YYYY"
+              )
+            : moment(data?.date).format("DD MMM YYYY")
+        }
+      </p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
+      <p style="font-size: 14px; line-height: 21px; font-weight: bold;">Time:&nbsp</p>
+      <p style="font-size: 14px; line-height: 21px;">
+        <!-- Insert dynamic content here -->
+        ${data?.time || kitAllDetails?.incident?.incident_time}
+      </p>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <div>
+      <h5 style="font-family:OpenSans-Regular;">
+          Summary Incident
+        </h5>
+        <div style="margin-bottom: -10px;background-color: #c5c5c5;border-width: 0.5px;border-style: solid; margin-top: -8px;"></div>
+      </div>
+      <div>
+        <p style="font-size: 14px; line-height: 21px;">
+          <!-- Insert dynamic content here -->
+          ${data?.brief || kitAllDetails?.incident?.description}
+        </p>
+      </div>
+    </div>
+
+    ${
+      // Conditionally render the contact number based on its length
+      kitAllDetails?.incident?.incident_pictures?.length !== 0
+        ? ` <div>
+        <h5 style="font-family:OpenSans-Regular;">Photos of Incident</h5>
+          <div style="margin-bottom: -10px;background-color: #c5c5c5;border-width: 0.5px;border-style: solid; margin-top: -8px;"></div>
+        </div>`
+        : ``
+    }
+
+   
+    <div style="display: flex; flex-wrap: wrap; margin-top:20px">
+      <!-- Loop through each image URL and create an img tag -->
+      ${kitAllDetails?.incident?.incident_pictures
+        .map(
+          (url) => `
+            <img src="${url}" alt="Image" style="width: 100px; height:120px; margin-left:10px">
+            `
+        )
+        .join("")}
+    </div>
+
+
+    <div style="margin-top:40">
+    <h5 style="font-family:OpenSans-Regular;">Kit and Location Details</h5>
+      <div style="margin-bottom: -10px;background-color: #c5c5c5;border-width: 0.5px;border-style: solid; margin-top: -8px;"></div>
+    </div>
+
+    <div>
+      <h5 style="font-family:OpenSans-Regular; text-align: center;">
+     
+      ${
+        kitAllDetails?.kit
+          ? `${
+              kitAllDetails?.kit?.brand !== "false"
+                ? kitAllDetails?.kit?.brand
+                : ""
+            } ${
+              kitAllDetails?.kit?.model_number !== "false"
+                ? kitAllDetails?.kit?.model_number
+                : ""
+            } ${
+              kitAllDetails?.kit?.product_name !== "false"
+                ? kitAllDetails?.kit?.product_name
+                : ""
+            }`
+          : `${
+              installKitDetails?.data.kit.brand !== "false"
+                ? installKitDetails?.data.kit.brand
+                : ""
+            } ${
+              installKitDetails?.data.kit.model_number !== "false"
+                ? installKitDetails?.data.kit.model_number
+                : ""
+            } ${installKitDetails?.data.kit.product_name}`
+      }
+   
+      </h5>
+    </div>
+
+
+   
+    <div class="top-container">
+      <div class="container">
+        <p class="heading">LOT Number</p>
+        <p class="text">
+          ${
+            kitAllDetails?.kit
+              ? kitAllDetails?.kit?.lot_number == "false"
+                ? null
+                : kitAllDetails?.kit?.lot_number
+              : installKitDetails?.data?.kit.lot_number == "false"
+              ? null
+              : installKitDetails?.data?.kit.lot_number
+          }
+        </p>
+      </div>
+
+      <div class="container">
+        <p class="heading">Batch Number</p>
+        <p class="text">
+          ${
+            kitAllDetails?.kit
+              ? kitAllDetails?.kit?.product_code == "false"
+                ? null
+                : kitAllDetails?.kit?.product_code
+              : installKitDetails?.data.kit?.product_code == "false"
+              ? null
+              : installKitDetails?.data.kit?.product_code
+          }
+        </p>
+      </div>
+
+      <div class="container">
+        <p class="heading">Expiry Date</p>
+        <p class="text">
+          ${
+            kitAllDetails?.kit
+              ? moment(kitAllDetails?.kit?.expiry_date).format(
+                  "DD MMM YYYY"
+                )
+              : formattedDate
+          }
+        </p>
+      </div>
+    </div>
+
+
+
+  <div class="top-container" style="margin-top:15px">
+    <div class="container">
+      <p class="heading">Installed Location</p>
+      <p class="text">
+        ${
+          kitAllDetails?.kit
+            ? kitAllDetails?.kit?.location_name
+            : installKitDetails?.data.kit.location_name
+        }
+      </p>
+    </div>
+
+    <div class="container" >
+      <p class="heading">Installed Area</p>
+      <p class="text">
+        ${
+          kitAllDetails?.kit
+            ? kitAllDetails?.kit?.area
+            : installKitDetails?.data.kit.area
+        }
+      </p>
+    </div>
+  </div>
+
+
+  <div style="margin-top:35">
+  <h5 style="font-family:OpenSans-Regular;">Equipments used in Incident</h5>
+    <div style="margin-bottom: -10px;background-color: #c5c5c5;border-width: 0.5px;border-style: solid; margin-top: -8px;"></div>
+  </div>
+
+
+  <div>
+    <div style="
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #047835; /* Assuming Colors.greenTint represents this color */
+      padding: 12px 10px;
+      margin-top: 20px;
+    ">
+      <span style="
+        color: #fff; /* Assuming Colors.white represents this color */
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: -0.011em;
+        text-align: left;
+      ">
+        Used Items
+      </span>
+      <span style="
+      font-family: 'Open Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: -0.011em;
+      text-align: left;
+        color: #fff; /* Assuming Colors.white represents this color */
+      ">
+        Quantity
+      </span>
+    </div>
+     
+    <div style="display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // background-color: #047835; /* Assuming Colors.greenTint represents this color */
+    padding: 12px 10px;
+ ">
+        <!-- Loop through each image URL and create an img tag -->
+        ${
+          listData ||
+          kitAllDetails?.incident?.item_used
+            .map(
+              (item) => `
+            <span style="
+            // color: #fff; /* Assuming Colors.white represents this color */
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: -0.011em;
+            text-align: left;
+          ">
+            ${item.title + " Used by " + item.full_name}
+          </span>
+          <span style="
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: -0.011em;
+          text-align: left;
+            // color: #fff; /* Assuming Colors.white represents this color */
+          ">
+          ${item.used_quantity}
+          </span>
+              `
+            )
+            .join("")
+        }
+ 
+    </div>
+  </div>
+
+
+ 
+  </body>
+  </html>
+      `,
+}}
+style={{ flex: 1 }}
+/>

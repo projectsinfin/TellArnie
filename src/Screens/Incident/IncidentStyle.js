@@ -1,0 +1,140 @@
+import { StyleSheet } from "react-native";
+import Colors from "../../Styles/Colors";
+import imagePath from "../../Constant/imagePath";
+import {
+  responsiveHeight,
+  responsiveWidth,
+} from "react-native-responsive-dimensions";
+
+export default IncidentStyle = StyleSheet.create({
+  container: {
+    backgroundColor: Colors.white,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    marginTop: 10,
+    flex: 1,
+  },
+  heading: {
+    flex: 1,
+    marginTop: 30,
+    marginHorizontal: 40,
+  },
+  headingText: {
+    textAlign: "center",
+    fontSize: 14,
+    marginTop: 10,
+  },
+  cardView: {
+    backgroundColor: Colors.secondary,
+    padding: 10,
+    flexDirection: "row",
+    borderRadius: 10,
+    marginTop: 40,
+    paddingVertical: 30,
+  },
+  cardTeadingText: { fontSize: 18, marginTop: 14 },
+  countryContainer: {
+    flexDirection: "row",
+    width: "29%",
+    height: 40,
+    alignItems: "center",
+    alignSelf: "center",
+    marginTop: 20,
+    borderWidth: 1,
+    borderColor: Colors.dividerLight,
+    borderRadius: 5,
+    justifyContent: "space-evenly",
+  },
+  countryModal: {
+    marginRight: -13,
+    width: "100%",
+    position: "relative",
+  },
+  countrytext: {
+    flexDirection: "row",
+    alignItems: "center",
+    position: "absolute",
+    marginLeft: 33,
+  },
+  downArrow: { width: 14, height: 14, marginLeft: 12 },
+
+  headingContainer: {
+    color: Colors.white,
+    width: "90%",
+    letterSpacing: -1,
+    textAlign: "center",
+    alignSelf: "center",
+    marginHorizontal: 15,
+    marginTop: 10,
+  },
+  buttonContainer: {
+    backgroundColor: Colors.white,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    // paddingHorizontal: 15,
+    flex: 1,
+  },
+  LeicesterHeading: { fontSize: 14, lineHeight: 21 },
+  LeicesterText: {
+    fontSize: 14,
+    textAlign: "left",
+    lineHeight: 21,
+  },
+  statusViewSty: {
+    flex: 0.5,
+    justifyContent: "space-between",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  LocationView: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    // height: 45,
+    marginVertical: 10,
+    paddingHorizontal: 15,
+  },
+  Monitorsafetyproducts: {
+    fontSize: 14,
+    color: Colors.white,
+    textAlign: "center",
+    marginVertical: 20,
+  },
+  buttonStyle: {
+    alignSelf: "center",
+    borderRadius: 10,
+    marginTop: 20,
+    width: "60%",
+  },
+
+  dateView: {
+    justifyContent: "space-between",
+    flexDirection: "row",
+    alignItems: "center",
+    // height: responsiveHeight(6.5),
+    height: 36,
+    borderWidth: 1,
+    borderColor: Colors.dividerLight,
+    // padding: 8,
+    paddingVertical: responsiveWidth(1),
+    marginTop: 20,
+    marginBottom: 10,
+    borderRadius: responsiveHeight(5),
+    paddingHorizontal: responsiveHeight(3),
+    flex: 0.42,
+  },
+  searchIconSty: {
+    // position: "absolute",
+    // alignSelf: "flex-end",
+    // flex: 0.1,
+    // right: -6,
+  },
+  searchbarSty: {
+    // height: 45,
+    lineHeight: 20,
+    height: 38,
+    borderRadius: 20,
+    paddingHorizontal: 15,
+    fontSize: 14,
+  },
+});

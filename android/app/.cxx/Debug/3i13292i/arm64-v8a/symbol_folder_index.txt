@@ -1,0 +1,1 @@
+/Users/pankajstaple/Desktop/MedicalKit/android/app/build/intermediates/cxx/Debug/3i13292i/obj/arm64-v8a
