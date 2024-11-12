@@ -1,0 +1,37 @@
+.quickthreepage hr {
+  border: 1px solid !important;
+}
+
+.quickthreepage .customcontinuebutton {
+  background-color: #047835;
+  border: none;
+  width: 100%;
+}
+
+.quickthreepage .quickheading {
+  line-height: 27px !important;
+  text-align: center;
+}
+
+.quickthreepage .equipment_incident {
+  background-color: #047835;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  color: white;
+}
+.quickthreepage .button_custom {
+  background-color: #a1d55d;
+  border: none;
+}
+
+.incidentmadeinfo .d-flex h5 {
+  font-weight: bold;
+  font-size: 14px !important;
+}
+.customcontinuebutton {
+  min-height: 42px !important;
+}
+.incidentmadeinfo .d-flex span {
+  font-size: 14px !important;
+}

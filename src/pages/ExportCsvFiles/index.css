@@ -1,0 +1,42 @@
+.exportcsv .customradio {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.exportcsv .customradiolabel {
+  font-size: 18px;
+}
+
+.exportcsv .active {
+  background-color: #000;
+}
+
+.exportcsv .customexportsearch {
+  display: block;
+  border-radius: 9px;
+  margin-left: 57px;
+  width: 93%;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.exportcsv .search_icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: gray;
+  cursor: pointer;
+}
+
+.exportcsv .customexportcancelbutton {
+  margin-right: 20px;
+  width: 150px !important;
+}
+
+.exportcsv .customexportbutton {
+  width: 220px !important;
+}

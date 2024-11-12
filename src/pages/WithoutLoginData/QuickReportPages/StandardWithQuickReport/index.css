@@ -1,0 +1,59 @@
+.standardwithquickreport .inner_box {
+  background-color: #a1d55d;
+  padding: 30px 0px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.standardwithquickreport .inner_box .image {
+  width: 20%;
+  text-align: center;
+}
+.standardwithquickreport .inner_box .text_data {
+  width: 50%;
+  text-align: left;
+}
+.quickonepage .phone_inputcountrycode input {
+  height: 50px !important;
+}
+.customcontinuebutton {
+  min-height: 60px;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .standardwithquickreport .inner_box {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 15px;
+  }
+  .standardwithquickreport .inner_box .image.ms-4 {
+    margin: 0px !important;
+  }
+  .standardwithquickreport .inner_box .image,
+  .standardwithquickreport .inner_box .text_data {
+    width: 100%;
+    text-align: center;
+  }
+  .button_info .row .col-md-4,
+  .button_info .row .col-md-6 {
+    margin-bottom: 12px;
+  }
+  h5.quickheading.mb-3.letter_spacing.fw-bold {
+    font-size: 15px !important;
+    line-height: 18px !important;
+  }
+  .incidentmadeinfo .d-flex h5 {
+    font-size: 15px;
+    min-width: 125px;
+  }
+  .incidentmadeinfo .d-flex span {
+    font-size: 15px;
+  }
+  h5.quickheading.mb-3 {
+    font-size: 18px;
+  }
+}

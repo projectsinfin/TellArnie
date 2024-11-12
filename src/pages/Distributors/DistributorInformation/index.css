@@ -1,0 +1,39 @@
+.distributorinfo .companylogo {
+  background-color: #e5f0ff;
+  padding: 15px;
+  text-align: center;
+}
+
+.phoneinput input.form-control {
+  width: 100% !important;
+}
+
+.distributorinfo .companylogo {
+  background-color: #e5f0ff;
+  padding: 15px;
+  text-align: center;
+}
+
+.phoneinput input.form-control {
+  width: 100% !important;
+}
+
+.distributorinfo .custom_image {
+  width: 100% !important;
+  height: 147px !important;
+  object-fit: contain;
+}
+/* .slick-slide.slick-active.slick-cloned .d-flex {
+  background-color: #E5F0FF;
+  padding: 0px 10px;
+} */
+.background-transparent{
+  background-color: transparent;
+}
+.input_2_custom{
+  position: relative;
+}
+.input_2_custom p.text-danger {
+  position: absolute;
+  bottom: -38px;
+}

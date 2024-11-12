@@ -1,0 +1,25 @@
+.saftykit_custom_title {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(-50%);
+}
+.saftykit_custom_up_icon {
+  position: absolute;
+  top: 52%;
+  left: 180px;
+  color: #42bd53;
+}
+
+.saftykitstyle {
+ position: absolute; 
+  top: 200px;
+  left: 104px;
+  color: lightgray; 
+}
+
+.rounded_16 {
+  border-radius: 16px !important;
+}

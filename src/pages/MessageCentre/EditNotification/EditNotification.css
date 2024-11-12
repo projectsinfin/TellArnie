@@ -1,0 +1,98 @@
+.search_btn_add form {
+    position: relative;
+  }
+  /* .checkboxes {} */
+  .checkboxes input.form-check-input {
+    appearance: none;
+    background: #E4E4E4;
+    width: 24px;
+    height: 24px;
+  }
+  .checkboxes label.form-check-label {
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.011em;
+    margin-left: 7px;
+    color: #89898A;
+  }
+  .checkboxes input.form-check-input:checked {
+    background: #0D6EFD;
+  }
+  .search_btn_add form input {
+    padding: 15px;
+  }
+  .search_btn_add form button {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 7px 25px;
+  }
+  .span_styles {
+    display: flex;
+    gap: 5px;
+    padding: 20px 0px;
+  }
+  .span_styles span {
+    padding: 5px 10px;
+    border: 1px solid #A8A8BD;
+    border-radius: 10px;
+    font-size: 14px;
+    letter-spacing: -0.011em;
+    color: #A8A8BD;
+  }
+  .checkboxes .form-check {
+    padding-bottom: 20px !important;
+  }
+  .notification-card label {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .date-picker-container {
+    flex: 1;
+  }
+  .custom-datepicker {
+    border-radius: 0px;
+    padding: 10px;
+    background-color: transparent;
+  }
+  .react-datepicker-popper {
+    z-index: 1;
+    line-height: 0;
+    left: -101px !important;
+  }
+  /* .react-datepicker-wrapper input.custom-datepicker {
+    /* width: calc(100% - 15px); */
+   
+  .notification-card select,
+  .resources select {
+    color: rgba(23, 23, 23, 0.5);
+    border-color: rgba(23, 23, 23, 0.05);
+  }
+  .notification-card select:focus,
+  .notification-card select:focus-visible,
+  .resources select:focus,
+  .resources select:focus-visible {
+    border-color: rgba(23, 23, 23, 0.05) !important;
+    outline: 0px;
+  }
+  .resources label {
+    color: rgba(168, 168, 189, 1);
+  }
+  /* Example CSS */
+
+/* Adjust the size of the date and time input */
+.small-date-time-picker {
+    font-size: 10px;
+  }
+  
+  /* Adjust the size of the calendar icon */
+  .small-calendar-icon {
+    font-size: 16px;
+  }
+  

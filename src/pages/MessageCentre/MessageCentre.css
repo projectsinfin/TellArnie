@@ -1,0 +1,244 @@
+/* Kits.css */
+
+.text-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ /* Kits.css */
+
+
+  
+  .text-icon span {
+    font-size: 16px; /* Adjust text size as needed */
+  }
+ 
+  
+/* Kits.css */
+
+/* Button container */
+
+  /* Button text */
+  .icon-button span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+  
+  /* Button icons */
+  .kits_row .icon-button svg {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: #006AFF;
+    color: #fff;
+    border-radius: 50%;
+}
+  /* Kits.css */
+  .kits_row {
+    padding: 35px 0px;
+}
+
+.kits_row button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border: 0px;
+}
+
+.kits_row button:hover {
+    background: transparent;
+}
+/* Button icons */
+
+  
+  .button-text {
+    /* Use the styleName provided */
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#006AFF ;
+    /* Add any additional styles you need */
+  }
+ 
+
+  
+  /* Adjust spacing between buttons */
+  .text-row .col {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  /* Align buttons to the center */
+  .text-row {
+    justify-content: center;
+  }
+  /* Kits.css */
+
+/* Styles for the table header */
+.table thead th {
+
+
+    width: 1042px;
+    height: 22px;
+    gap: 20px;
+    /* Add additional styling properties as needed */
+  
+  
+  }
+  
+  /* Styles for the table body */
+  .table tbody td {
+    text-align: center;
+  }
+  
+  /* Styles for action buttons within the table */
+  .table tbody td button {
+    margin-right: 5px; /* Add spacing between buttons */
+  }
+  .listing{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 15px;
+  }
+ 
+  
+  .table-headings th {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #a8a8bd;
+    /* Additional styles for the table headings can be added here */
+  }
+  /* Kits.css */
+  .custom_dropdown > button {
+    background: transparent;
+    color: #000;
+    border: 0px;
+    padding: 0px;
+    width: auto;
+}
+.slect_dropdown {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+
+.custom_dropdown.dropdown {
+  position: absolute;
+  right: 20%;
+  top: -5px;
+}
+.product_img .product-image {
+  width: 50px;
+  object-fit: cover;
+}
+/* Styles for the table */
+.table {
+    
+    border-collapse: collapse;
+  }
+  
+  /* Styles for table cells */
+  .table th,
+  .table td {
+    padding: 10px; /* Adjust padding */
+  }
+  
+  /* Add gap between table cells */
+  .table th:not(:last-child),
+  .table td:not(:last-child) {
+    margin-right: 20px; /* Adjust gap */
+  }
+  .product-image {
+  
+    object-fit: cover; /* Ensure the image covers the entire area */
+  }
+  /* Kits.css */
+
+/* Styles for different action types */
+.action {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-right: 5px; /* Adjust spacing between actions */
+  }
+  
+  /* Styles for primary action */
+  .primary {
+    width: 100px; /* Fixed width */
+    height: 34px; /* Hug height */
+    padding: 6px 10px; /* Padding: top/bottom, left/right */
+    border-radius: 30px; /* Border radius */
+    display: inline-block;
+    margin-right: 10px; /* Gap between actions */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #D9F2DD;
+    color:#359742;
+
+
+  
+  
+  }
+  
+  .secondary {
+    width: 100px; /* Fixed width */
+    height: 34px; /* Hug height */
+    padding: 6px 10px; /* Padding: top/bottom, left/right */
+    border-radius: 30px; /* Border radius */
+    display: inline-block;
+    margin-right: 10px; /* Gap between actions */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #FFF5CC; /* Background color */
+
+    color: #CCA300;
+
+  }
+  
+  /* Styles for tertiary action */
+  .tertiary {
+    width: 100px; /* Fixed width */
+    height: 34px; /* Hug height */
+    padding: 6px 10px; /* Padding: top/bottom, left/right */
+    border-radius: 30px; /* Border radius */
+    display: inline-block;
+    margin-right: 10px; /* Gap between actions */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #ffe5e5; /* Background color */
+    color: #FF6666;      
+  }
+  
+  

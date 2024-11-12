@@ -1,0 +1,60 @@
+.white-option {
+  color: black; /* Change text color to black */
+}
+.select-search-wrapper {
+  position: relative;
+}
+
+.select-search-wrapper .select-search {
+  overflow-y: auto;
+  max-height: 200px; /* Adjust this value as needed */
+}
+
+.select-search-wrapper input[type="text"] {
+  display: none;
+}
+.drop_icon {
+  position: absolute;
+  right: 9px;
+  top: 12px;
+  transition: all 0.3s linear;
+}
+.list_wrapper {
+  height: 100px;
+  overflow-y: auto;
+  padding-top: 10px;
+  cursor: pointer;
+}
+/* --- */
+.batch_table{
+  padding:30px;
+  border-top: 1px solid rgba(23, 23, 23, 0.5);
+  border-bottom: 1px solid rgba(23, 23, 23, 0.5);
+}
+.batch_table th,.batch_table td{
+  color: rgba(23, 23, 23, 0.5) !important ;
+  padding: 15px !important;
+  text-align: left !important;
+}
+.batch_table input[type="date"] {
+  color: rgba(23, 23, 23, 0.5) !important ;
+}
+.batch_table tbody tr td input[type="text"] {
+  padding: 5px;
+  /* border: 1px solid rgba(23, 23, 23, 0.5) !important ; */
+  /* border: 0px !important; */
+  width: 100px !important;
+}
+
+.batch_table input[type="date"]:focus-visible,
+.batch_table tbody tr td input[type="text"]:focus-visible {
+  border: 0px !important;
+  outline: 0px !important;
+}
+
+.filtered_row:hover{
+  cursor: pointer;
+}
+.col-12.batch_table {
+  min-height: 40vh;
+}

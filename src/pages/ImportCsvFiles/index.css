@@ -1,0 +1,71 @@
+.importcsvwrapper .cancelbutton {
+  width: 150px !important;
+}
+
+.importcsvwrapper .nextbutton {
+  width: 220px !important;
+}
+
+/* .importcsvwrapper .renderstep {
+  /* min-height: 400px !important; */
+
+.importcsvwrapper .customradius {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 25%;
+}
+.importcsvwrapper .custominput {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 75%;
+}
+
+.importcsvwrapper .dropcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 170px;
+  background-color: aliceblue;
+  border: 1px dashed #757575;
+  border-radius: 10px;
+}
+
+.importcsvwrapper .dropcontainer .text_gray {
+  color: #757575;
+  font-weight: 500;
+}
+
+.importcsvwrapper .importedcolumn {
+  background-color: rgb(170, 170, 209);
+  padding: 15px;
+  width: 40%;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.importcsvwrapper .importedcolumnselect {
+  width: 200px !important;
+  /* padding: 18px !important; */
+}
+
+.importcsvwrapper .customradio {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.importcsvwrapper .customradiolabel {
+  font-size: 20px;
+}
+
+.importcsvwrapper .active {
+  background-color: #000;
+}
+.importcsvwrapper .rowheaderparent {
+  height: 200px;
+  overflow-y: scroll;
+}

@@ -1,0 +1,109 @@
+.horizontal-month-slider {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.horizontal-month-slider {
+  /* overflow-x: hidden; */
+}
+
+.months-container {
+  margin: auto;
+  display: flex;
+  /* overflow-x: auto; */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-color: transparent transparent; /* For Firefox */
+  width: 303px; /* Fixed width */
+  height: 60px; /* Fixed height */
+  padding: 10px 22px; /* Padding */
+  gap: 0; /* Gap between items */
+  border-width: 1px 0px 1px 0px; /* Border width: top, right, bottom, left */
+  border-style: solid; /* Border style */
+  border-color: #a8a8bd; /* Border color */
+  justify-content: space-between; /* Align items with space between */
+  opacity: 1; /* Set opacity to show the container */
+}
+
+.month:hover {
+  transform: scale(1.1);
+}
+
+.month.active {
+  font-weight: bold;
+}
+
+.month {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  text-align: left;
+  padding: 10px 15px; /* Adjust padding as needed */
+  cursor: pointer;
+}
+
+.current-month {
+  color: #006aff;
+  /* color: white; */
+}
+
+.other-month {
+  color: #a8a8bd;
+  /* Adjust text color as needed */
+}
+
+
+
+/* new css
+ */
+ .months-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.month {
+  flex: 0 0 auto;
+  width: 100px; /* Adjust according to your preference */
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px; /* Adjust spacing between months */
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.month.current-month {
+  background-color: #ddd; /* Highlight the current month */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}

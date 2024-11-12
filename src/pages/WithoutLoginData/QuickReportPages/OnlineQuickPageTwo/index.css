@@ -1,0 +1,57 @@
+.quicktwopage .quickheading {
+  line-height: 27px !important;
+  text-align: center;
+}
+
+.quicktwopage .customcontinuebutton {
+  background-color: #047835;
+  border: none;
+  width: 100%;
+}
+
+.quicktwopage .button_custom {
+  background-color: #a1d55d;
+  border: none;
+}
+
+.quicktwopage hr {
+  margin-top: 40px;
+  border: 1px solid !important;
+}
+
+.quicktwopage .customselectbox {
+  /* padding: 18px !important; */
+  color: gray;
+}
+
+/* ----- */
+.row.btns_row .col-md-4 {
+  width: auto;
+  padding: 0px 8px;
+  margin-bottom: 10px !important;
+}
+
+.row.btns_row .col-md-4 button span.fw-bold {
+  font-size: 10px;
+}
+
+.row.btns_row .col-md-4 button {
+  padding: 5px 23px;
+  height: 42px !important;
+  margin-bottom: 0px;
+  font-family: "Open Sans", sans-serif;
+  line-height: normal;
+}
+span.value_span {
+  display: block;
+  font-size: 10px;
+  line-height: 8px;
+  min-height: 14px;
+}
+.customcontinuebutton {
+  min-height: 42px;
+}
+.row.btns_row .col-md-4:nth-child(4),
+.row.btns_row .col-md-4:nth-child(5) {
+  width: 49%;
+}
