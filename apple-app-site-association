@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["AMA7F96K9R.com.reliance.medical"],
+        "components": [
+          {
+            "/": "*",
+            "comment": "Matches any URL whose path starts with /email/"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["AMA7F96K9R.com.reliance.medical"]
+  },
+  "appclips": {
+    "apps": ["AMA7F96K9R.com.reliance.medical"]
+  }
+}

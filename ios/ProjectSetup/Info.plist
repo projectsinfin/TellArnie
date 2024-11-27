@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Tell Arnie</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>tellarnie.com</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>https</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>tellarnieapp</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tellarnieapp</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This app requires access to the music.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This app requires access to the calender.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Tell Arnie requires access to the camera to allow users to take profile pictures and upload documents like identification for verification purposes.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Access to contacts is required by the application for improved functionality.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Enable location access to accurately save your company address with precise location details</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access is required to support camera functionality for QR and barcode scanning.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>This app requires access to the motion.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app requires access to the photo library.</string>
+	<key>NSSiriUsageDescription</key>
+	<string>This app requires access to the siri.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>This app requires access to the speech recognization.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Medium.ttf</string>
+		<string>OpenSans-MediumItalic.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-SemiBold.ttf</string>
+		<string>OpenSans-SemiBoldItalic.ttf</string>
+		<string>OpenSans_Condensed-Bold.ttf</string>
+		<string>OpenSans_Condensed-BoldItalic.ttf</string>
+		<string>OpenSans_Condensed-ExtraBold.ttf</string>
+		<string>OpenSans_Condensed-ExtraBoldItalic.ttf</string>
+		<string>OpenSans_Condensed-Italic.ttf</string>
+		<string>OpenSans_Condensed-Light.ttf</string>
+		<string>OpenSans_Condensed-LightItalic.ttf</string>
+		<string>OpenSans_Condensed-Medium.ttf</string>
+		<string>OpenSans_Condensed-MediumItalic.ttf</string>
+		<string>OpenSans_Condensed-Regular.ttf</string>
+		<string>OpenSans_Condensed-SemiBold.ttf</string>
+		<string>OpenSans_Condensed-SemiBoldItalic.ttf</string>
+		<string>OpenSans_SemiCondensed-Bold.ttf</string>
+		<string>OpenSans_SemiCondensed-BoldItalic.ttf</string>
+		<string>OpenSans_SemiCondensed-ExtraBold.ttf</string>
+		<string>OpenSans_SemiCondensed-ExtraBoldItalic.ttf</string>
+		<string>OpenSans_SemiCondensed-Italic.ttf</string>
+		<string>OpenSans_SemiCondensed-Light.ttf</string>
+		<string>OpenSans_SemiCondensed-LightItalic.ttf</string>
+		<string>OpenSans_SemiCondensed-Medium.ttf</string>
+		<string>OpenSans_SemiCondensed-MediumItalic.ttf</string>
+		<string>OpenSans_SemiCondensed-Regular.ttf</string>
+		<string>OpenSans_SemiCondensed-SemiBold.ttf</string>
+		<string>OpenSans_SemiCondensed-SemiBoldItalic.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

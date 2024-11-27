@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "337955144908",
+    "project_id": "tellarnie-app",
+    "storage_bucket": "tellarnie-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337955144908:android:345b527009e904ef21ae69",
+        "android_client_info": {
+          "package_name": "com.projectsetup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFmu8gZ5W4-Bj_IQoTEs-OywSXXUuq4rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

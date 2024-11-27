@@ -1,0 +1,16 @@
+current directory: /Users/pankajstaple/Desktop/ProjectSetup/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+/Users/pankajstaple/.rvm/rubies/ruby-2.7.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/pankajstaple/Desktop/ProjectSetup/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240118-5945-epm2gz sitelibdir\=./.gem.20240118-5945-epm2gz clean
+
+current directory: /Users/pankajstaple/Desktop/ProjectSetup/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240118-5945-epm2gz sitelibdir\=./.gem.20240118-5945-epm2gz
+make: Nothing to be done for `all'.
+
+current directory: /Users/pankajstaple/Desktop/ProjectSetup/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240118-5945-epm2gz sitelibdir\=./.gem.20240118-5945-epm2gz install
+
+current directory: /Users/pankajstaple/Desktop/ProjectSetup/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240118-5945-epm2gz sitelibdir\=./.gem.20240118-5945-epm2gz clean
